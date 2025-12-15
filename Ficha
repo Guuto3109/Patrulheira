@@ -111,7 +111,7 @@
 
 <div class="container">
     <header>
-        <img src="Patrulha.jpg" alt="A Patrulheira" class="char-img">
+        <img src="patrulha.png" alt="A Patrulheira" class="char-img">
         
         <h1>A Patrulheira</h1>
         <div class="quote">"A floresta sussurra para quem sabe ouvir. E ela me disse que você não sai daqui vivo."</div>
