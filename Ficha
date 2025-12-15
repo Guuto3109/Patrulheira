@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha: A Patrulheira</title>
+    <style>
+        /* Estilo Geral (Visual de Pergaminho) */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4e4bc;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fffbf0;
+            border: 1px solid #d4c5a3;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        /* Cabeçalho e Imagem */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            color: #8b0000;
+            margin: 10px 0 5px 0;
+            font-size: 2.5em;
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .char-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 4px solid #4a3b2a;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            margin-top: 10px;
+        }
+
+        /* Tabela de Atributos */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .stat-box {
+            background-color: #e8dcc5;
+            border: 1px solid #bba;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .stat-val {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Seções (Ataques, Habilidades) */
+        .section-title {
+            background-color: #4a3b2a;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 1.2em;
+            margin-top: 30px;
+            border-radius: 3px;
+        }
+        .attack-card {
+            background-color: #fff;
+            border-left: 5px solid #2ecc71; /* Verde para Ranger */
+            padding: 10px 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .ability-card {
+            background-color: #fff;
+            border-left: 5px solid #e67e22;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+        strong { color: #8b0000; }
+
+        /* Rodapé de Impressão */
+        @media print {
+            body { background-color: white; }
+            .container { box-shadow: none; border: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="Patrulha.jpg" alt="A Patrulheira" class="char-img">
+        
+        <h1>A Patrulheira</h1>
+        <div class="quote">"A floresta sussurra para quem sabe ouvir. E ela me disse que você não sai daqui vivo."</div>
+        <p><strong>Raça:</strong> Elfa da Floresta | <strong>Estilo:</strong> Dano à Distância</p>
+    </header>
+
+    <div class="stats-grid">
+        <div class="stat-box">
+            <span class="stat-label">Vida (PV)</span>
+            <span class="stat-val" style="color: #c0392b;">24</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Defesa</span>
+            <span class="stat-val" style="color: #2980b9;">14</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Destreza</span>
+            <span class="stat-val">+3</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Sabedoria</span>
+            <span class="stat-val">+2</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">⚔️ Seus Ataques</h2>
+    
+    <div class="attack-card">
+        <h3>🏹 Arco Longo (Distância)</h3>
+        <p>Sua arma principal. Use de longe.</p>
+        <p><strong>Acerto:</strong> 1d20 + 3 <br> <strong>Dano:</strong> 1d8 + 3 (Perfurante)</p>
+    </div>
+
+    <div class="attack-card" style="border-color: #95a5a6;">
+        <h3>🗡️ Espada Curta (Corpo a Corpo)</h3>
+        <p>Use apenas se o inimigo chegar perto.</p>
+        <p><strong>Acerto:</strong> 1d20 + 3 <br> <strong>Dano:</strong> 1d6 + 3 (Cortante)</p>
+    </div>
+
+    <h2 class="section-title">🌟 Habilidades Especiais</h2>
+
+    <div class="ability-card">
+        <h3>🎯 Marca do Caçador (Ação Livre)</h3>
+        <p>Escolha um inimigo para focar. Toda vez que você acertar um ataque nele, causa <strong>+1d6 de dano extra</strong>.</p>
+    </div>
+
+    <div class="ability-card" style="border-color: #27ae60;">
+        <h3>👀 Sentidos Élficos (Passiva)</h3>
+        <p>Você tem visão no escuro e vantagem em testes de Percepção (Ouvir/Ver) na floresta.</p>
+    </div>
+
+    <h2 class="section-title">🎒 Equipamento</h2>
+    <ul>
+        <li>Armadura de Couro Leve</li>
+        <li>Arco Longo (20 flechas)</li>
+        <li>Espada Curta</li>
+        <li>Capa de viagem verde-musgo (Camuflagem)</li>
+        <li>Kit de Exploração (Corda, pederneira, cantil)</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
